@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo na Suécia - Descubra as Maravilhas Suecas</title>
+    <title>Informações sobre a Suécia - Dados e Fatos</title>
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -46,7 +46,7 @@
         
         .hero-section {
             background: linear-gradient(rgba(0, 87, 183, 0.7), rgba(0, 87, 183, 0.5)), 
-                        url('images/stockholm.webp');
+                        url('https://images.unsplash.com/photo-1526745925052-dd824d27b9ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -99,35 +99,25 @@
                 var(--sweden-blue) 40%, var(--sweden-blue) 100%);
         }
         
-        .feature-icon {
-            font-size: 2.5rem;
+        .info-icon {
+            font-size: 2rem;
             color: var(--sweden-blue);
             margin-bottom: 15px;
         }
         
-        .destination-card .card-img-overlay {
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            opacity: 0;
-            transition: opacity 0.3s;
+        .fact-box {
+            background-color: white;
+            border-left: 4px solid var(--sweden-yellow);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
         }
         
-        .destination-card:hover .card-img-overlay {
-            opacity: 1;
-        }
-        
-        .season-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background-color: var(--sweden-yellow);
-            color: var(--sweden-dark);
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.8rem;
+        .map-container {
+            height: 400px;
+            background-color: #eee;
+            border-radius: 10px;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -153,13 +143,13 @@
                         <a class="nav-link" href="cultura.html">Cultura</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="turismo.html">Turismo</a>
+                        <a class="nav-link" href="turismo.html">Turismo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="culinaria.html">Culinária</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="informacoes.html">Informações</a>
+                        <a class="nav-link active" href="informacoes.html">Informações</a>
                     </li>
                 </ul>
             </div>
@@ -169,8 +159,8 @@
     <!-- Hero Section -->
     <section class="hero-section text-center">
         <div class="container">
-            <h1 class="display-3 fw-bold mb-4">Turismo na Suécia</h1>
-            <p class="lead mb-5">Descubra paisagens deslumbrantes, cidades encantadoras e experiências únicas</p>
+            <h1 class="display-3 fw-bold mb-4">Informações sobre a Suécia</h1>
+            <p class="lead mb-5">Dados, fatos e estatísticas sobre o país</p>
         </div>
     </section>
 
@@ -178,136 +168,158 @@
     <section class="container mb-5">
         <div class="row mb-5">
             <div class="col-lg-6">
-                <h2 class="fw-bold mb-4">Explore a Suécia</h2>
-                <p class="lead">Da vibrante Estocolmo ao deslumbrante círculo ártico, a Suécia oferece uma variedade incrível de experiências turísticas para todos os gostos e estações.</p>
-                <p>Conhecida por sua natureza espetacular, a Suécia possui 29 parques nacionais, milhares de lagos e uma costa com mais de 200.000 ilhas. As cidades suecas combinam história medieval com design moderno e inovação tecnológica.</p>
-                <p>Seja para ver a aurora boreal no inverno, aproveitar o sol da meia-noite no verão, ou explorar a rica história viking, a Suécia tem algo especial para cada visitante.</p>
+                <h2 class="fw-bold mb-4">Dados Gerais</h2>
+                <p class="lead">A Suécia é um país nórdico localizado na península escandinava, conhecido por sua alta qualidade de vida, avançado sistema de bem-estar social e belas paisagens naturais.</p>
+                
+                <div class="fact-box">
+                    <h4 class="fw-bold"><i class="fas fa-landmark me-2"></i>Capital</h4>
+                    <p>Estocolmo (Stockholm) - maior cidade do país com cerca de 1,6 milhões na área metropolitana</p>
+                </div>
+                
+                <div class="fact-box">
+                    <h4 class="fw-bold"><i class="fas fa-language me-2"></i>Língua Oficial</h4>
+                    <p>Sueco (svenska). Inglês é amplamente falado como segunda língua por cerca de 90% da população.</p>
+                </div>
+                
+                <div class="fact-box">
+                    <h4 class="fw-bold"><i class="fas fa-globe-europe me-2"></i>Localização</h4>
+                    <p>Norte da Europa, na península escandinava. Faz fronteira com Noruega a oeste e Finlândia a nordeste, e está conectada à Dinamarca pelo ponte-túnel de Öresund no sul.</p>
+                </div>
             </div>
             <div class="col-lg-6">
-                <div class="card card-hover border-0">
-                    <img src="images/gamla.webp" class="card-img-top" alt="Gamla Stan, Estocolmo">
+                <div class="card card-hover border-0 h-100">
+                    <div class="map-container">
+                        <!-- Mapa da Suécia - pode ser substituído por um mapa interativo real -->
+                        <img src="https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid h-100 w-100" alt="Mapa da Suécia" style="object-fit: cover;">
+                    </div>
                     <div class="card-body">
-                        <p class="card-text text-muted">Gamla Stan, a Cidade Velha de Estocolmo, com suas ruas de paralelepípedos e edifícios coloridos.</p>
+                        <p class="card-text text-muted">Mapa da Suécia mostrando sua localização na Escandinávia.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="text-center fw-bold mb-5">Principais Destinos</h2>
+        <h2 class="text-center fw-bold mb-5">Mais Informações</h2>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
-                <div class="card destination-card h-100 border-0">
-                    <img src="images/estolcomo.jpg" class="card-img h-100" alt="Estocolmo">
-                    <div class="card-img-overlay">
-                        <div>
-                            <span class="season-badge"><i class="fas fa-sun me-1"></i> Todas as estações</span>
-                            <h3 class="text-white fw-bold">Estocolmo</h3>
-                            <p class="text-white">A capital construída sobre 14 ilhas, com sua arquitetura deslumbrante, museus de classe mundial e vida urbana vibrante.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Explorar</a>
+                <div class="card card-hover h-100">
+                    <div class="card-body p-4">
+                        <div class="info-icon text-center">
+                            <i class="fas fa-clock"></i>
                         </div>
+                        <h4 class="fw-bold text-center">Fuso Horário</h4>
+                        <p class="text-center">UTC+1 (Horário da Europa Central) <br> UTC+2 no horário de verão (último domingo de março a último domingo de outubro)</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card destination-card h-100 border-0">
-                    <img src="images/gotemburgo.jpg" class="card-img h-100" alt="Gotemburgo">
-                    <div class="card-img-overlay">
-                        <div>
-                            <span class="season-badge"><i class="fas fa-sun me-1"></i> Todas as estações</span>
-                            <h3 class="text-white fw-bold">Gotemburgo</h3>
-                            <p class="text-white">A segunda maior cidade da Suécia, conhecida por seu charme descontraído, excelente cena gastronômica e arquipélago deslumbrante.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Explorar</a>
+                <div class="card card-hover h-100">
+                    <div class="card-body p-4">
+                        <div class="info-icon text-center">
+                            <i class="fas fa-university"></i>
                         </div>
+                        <h4 class="fw-bold text-center">Governo</h4>
+                        <p class="text-center">Monarquia constitucional parlamentarista <br> Rei: Carlos XVI Gustavo <br> Primeira-ministra: Ulf Kristersson (desde 2022)</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card destination-card h-100 border-0">
-                    <img src="images/malmo.jpg" class="card-img h-100" alt="Malmö">
-                    <div class="card-img-overlay">
-                        <div>
-                            <span class="season-badge"><i class="fas fa-sun me-1"></i> Primavera/Verão</span>
-                            <h3 class="text-white fw-bold">Malmö</h3>
-                            <p class="text-white">A porta de entrada para a Suécia a partir da Dinamarca, com sua mistura multicultural, arquitetura moderna e parques encantadores.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Explorar</a>
+                <div class="card card-hover h-100">
+                    <div class="card-body p-4">
+                        <div class="info-icon text-center">
+                            <i class="fas fa-cloud-sun"></i>
                         </div>
+                        <h4 class="fw-bold text-center">Clima</h4>
+                        <p class="text-center">Temperado no sul com invernos frios e verões amenos; subártico no norte. Temperaturas variam de -30°C no inverno no norte a 30°C no verão no sul.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card destination-card h-100 border-0">
-                    <img src="images/aurora.jpg" class="card-img h-100" alt="Kiruna e Aurora Boreal">
-                    <div class="card-img-overlay">
-                        <div>
-                            <span class="season-badge"><i class="fas fa-snowflake me-1"></i> Inverno</span>
-                            <h3 class="text-white fw-bold">Kiruna & Aurora Boreal</h3>
-                            <p class="text-white">No extremo norte, Kiruna oferece a chance de ver a espetacular aurora boreal e experimentar o hotel de gelo único no mundo.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Explorar</a>
+                <div class="card card-hover h-100">
+                    <div class="card-body p-4">
+                        <div class="info-icon text-center">
+                            <i class="fas fa-money-bill-wave"></i>
                         </div>
+                        <h4 class="fw-bold text-center">Moeda</h4>
+                        <p class="text-center">Coroa sueca (SEK) <br> 1 SEK ≈ 0,50 BRL (varia) <br> Notas: 20, 50, 100, 200, 500, 1000 SEK <br> Moedas: 1, 2, 5, 10 SEK</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card destination-card h-100 border-0">
-                    <img src="images/gotland.jpg"&q class="card-img h-100" alt="Gotland">
-                    <div class="card-img-overlay">
-                        <div>
-                            <span class="season-badge"><i class="fas fa-sun me-1"></i> Verão</span>
-                            <h3 class="text-white fw-bold">Gotland</h3>
-                            <p class="text-white">A maior ilha da Suécia, com a cidade medieval de Visby (Patrimônio da UNESCO), praias de pedra e paisagens únicas.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Explorar</a>
+                <div class="card card-hover h-100">
+                    <div class="card-body p-4">
+                        <div class="info-icon text-center">
+                            <i class="fas fa-ruler-combined"></i>
                         </div>
+                        <h4 class="fw-bold text-center">Área</h4>
+                        <p class="text-center">450.295 km² (3º maior país da UE) <br> 8,7% do território é água (cerca de 100.000 lagos) <br> 69% coberto por florestas <br> 3.218 km de costa</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card destination-card h-100 border-0">
-                    <img src="images/dalarna.jpg" class="card-img h-100" alt="Dalarna">
-                    <div class="card-img-overlay">
-                        <div>
-                            <span class="season-badge"><i class="fas fa-tree me-1"></i> Todas as estações</span>
-                            <h3 class="text-white fw-bold">Dalarna</h3>
-                            <p class="text-white">O coração da Suécia tradicional, com lagos azuis, florestas verdes, cavalos de Dalarna e o famoso solstício de verão em Midsommar.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Explorar</a>
+                <div class="card card-hover h-100">
+                    <div class="card-body p-4">
+                        <div class="info-icon text-center">
+                            <i class="fas fa-users"></i>
                         </div>
+                        <h4 class="fw-bold text-center">População</h4>
+                        <p class="text-center">10,5 milhões (2023) <br> Densidade: 25 hab/km² <br> Expectativa de vida: 82,8 anos <br> Taxa de alfabetização: 99%</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Unique Experiences -->
+    <!-- Fun Facts -->
     <section class="bg-light py-5 mb-5">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Experiências Únicas</h2>
+            <h2 class="text-center fw-bold mb-5">Curiosidades sobre a Suécia</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card card-hover h-80">
-                        <img src="images/icehotel.jpg" class="card-img-top" alt="Icehotel">
-                        <div class="card-body">
-                            <h4 class="fw-bold">Icehotel em Jukkasjärvi</h4>
-                            <p>O primeiro hotel de gelo do mundo, reconstruído a cada inverno com gelo do rio Torne. Uma experiência verdadeiramente única no círculo ártico.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Saiba mais</a>
+                    <div class="card card-hover h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold"><i class="fas fa-award me-2"></i>Prêmios Nobel</h4>
+                            <p>A cerimônia do Prêmio Nobel acontece anualmente em Estocolmo (exceto o da Paz, que é em Oslo). Alfred Nobel, criador do prêmio, era sueco.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card card-hover h-80">
-                        <img src="images/vasaloppet.jpg" class="card-img-top" alt="Vasaloppet">
-                        <div class="card-body">
-                            <h4 class="fw-bold">Vasaloppet</h4>
-                            <p>A mais antiga, longa e maior corrida de esqui cross-country do mundo, com 90km de extensão, realizada anualmente desde 1922.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Saiba mais</a>
+                    <div class="card card-hover h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold"><i class="fas fa-recycle me-2"></i>Sustentabilidade</h4>
+                            <p>A Suécia recicla 99% de seu lixo doméstico e importa lixo de outros países para gerar energia em usinas de reciclagem.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card card-hover h-80">
-                        <img src="images/arquipelogo.jpg" class="card-img-top" alt="Archipelago">
-                        <div class="card-body">
-                            <h4 class="fw-bold">Arquipélago de Estocolmo</h4>
-                            <p>Com mais de 30.000 ilhas, o arquipélago de Estocolmo oferece paisagens deslumbrantes, vilarejos pitorescos e natureza intocada.</p>
-                            <a href="#" class="btn btn-sweden btn-sm">Saiba mais</a>
+                    <div class="card card-hover h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold"><i class="fas fa-sun me-2"></i>Sol da Meia-Noite</h4>
+                            <p>No verão, no extremo norte do país, o sol não se põe por várias semanas. No inverno, ocorre o fenômeno oposto - a noite polar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-hover h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold"><i class="fas fa-home me-2"></i>Direito de Acesso</h4>
+                            <p>O "Allemansrätten" (Direito de Todos) permite que qualquer pessoa acampe, ande ou colha frutas silvestres em terras privadas, desde que respeite a natureza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-hover h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold"><i class="fas fa-music me-2"></i>Exportações Musicais</h4>
+                            <p>A Suécia é o terceiro maior exportador de música do mundo, depois dos EUA e Reino Unido. ABBA, Roxette, Avicii e Swedish House Mafia são alguns exemplos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-hover h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold"><i class="fas fa-bicycle me-2"></i>Cultura das Bicicletas</h4>
+                            <p>9 em 10 suecos possuem uma bicicleta. Em cidades como Malmö, cerca de 40% de todos os deslocamentos são feitos de bike.</p>
                         </div>
                     </div>
                 </div>
@@ -352,7 +364,7 @@
                     <p>Digite seu email para receber mais informações.</p>
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Seu email" aria-label="Seu email">
-                        <button class="btn btn-sweden" type="button">Cadastrar email</button>
+                        <button class="btn btn-sweden" type="button">Cadatrar email</button>
                     </div>
                 </div>
             </div>
