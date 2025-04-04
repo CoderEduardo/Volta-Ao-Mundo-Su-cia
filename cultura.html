@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Sueca - Tradições e Modernidade</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Mesmo estilo da página principal */
+        :root {
+            --sweden-blue: #0057B7;
+            --sweden-yellow: #FFCC00;
+            --sweden-light: #E6F0FA;
+            --sweden-dark: #003366;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .navbar {
+            background-color: var(--sweden-blue);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 500;
+            margin: 0 5px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--sweden-yellow) !important;
+            transform: translateY(-2px);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 87, 183, 0.7), rgba(0, 87, 183, 0.5)), 
+                        url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-sweden {
+            background-color: var(--sweden-yellow);
+            color: var(--sweden-dark);
+            font-weight: 600;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        
+        .btn-sweden:hover {
+            background-color: var(--sweden-dark);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            background-color: var(--sweden-dark);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .sweden-flag-pattern {
+            height: 10px;
+            background: linear-gradient(90deg, 
+                var(--sweden-blue) 0%, var(--sweden-blue) 30%, 
+                var(--sweden-yellow) 30%, var(--sweden-yellow) 40%, 
+                var(--sweden-blue) 40%, var(--sweden-blue) 100%);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--sweden-blue);
+            margin-bottom: 15px;
+        }
+        
+        .culture-icon {
+            font-size: 2rem;
+            color: var(--sweden-yellow);
+            background-color: var(--sweden-blue);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sweden Flag Pattern -->
+    <div class="sweden-flag-pattern"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-flag me-2"></i>Suécia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cultura.html">Cultura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="turismo.html">Turismo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="culinaria.html">Culinária</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacoes.html">Informações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Cultura Sueca</h1>
+            <p class="lead mb-5">Tradição, inovação e o equilíbrio perfeito entre ambos</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container mb-5">
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-4">A Essência da Cultura Sueca</h2>
+                <p class="lead">A cultura sueca é uma mistura fascinante de tradições antigas e modernidade progressista, refletindo valores como igualdade, sustentabilidade e conexão com a natureza.</p>
+                <p>Os suecos são conhecidos por seu estilo de vida equilibrado, que combina trabalho eficiente com tempo de qualidade dedicado à família e atividades ao ar livre. O conceito de "lagom" (nem muito, nem pouco - na medida certa) permeia muitos aspectos da vida sueca, desde o design até as relações sociais.</p>
+                <p>O país tem uma rica herança cultural que vai desde os tempos dos vikings até se tornar um dos países mais inovadores do mundo em design, tecnologia e sustentabilidade.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-hover border-0">
+                    <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" class="card-img-top" alt="Tradições culturais suecas">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Festival tradicional sueco com danças folclóricas e trajes típicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center fw-bold mb-5">Aspectos Culturais</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card-hover h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="culture-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="fw-bold">Igualdade e Sociedade</h4>
+                        <p>A Suécia é líder global em igualdade de gênero e tem uma sociedade baseada na confiança mútua. O "Jantelagen" (Lei de Jante) reflete a valorização da modéstia e igualdade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-hover h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="culture-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4 class="fw-bold">Design e Arquitetura</h4>
+                        <p>O design sueco é conhecido por sua funcionalidade, simplicidade e beleza minimalista. Marcas como IKEA e H&M levaram o design sueco para o mundo todo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-hover h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="culture-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h4 class="fw-bold">Música e Artes</h4>
+                        <p>Da música folclórica ao pop global (ABBA, Roxette, Avicii), a Suécia tem uma cena musical vibrante. O país também tem uma rica tradição literária e cinematográfica.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-hover h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="culture-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4 class="fw-bold">Festivais e Tradições</h4>
+                        <p>Celebrações como o Midsommar (solstício de verão), Lucia (festival de luzes) e o Nobel Banquet são partes importantes da cultura sueca.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-hover h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="culture-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="fw-bold">Friluftsliv</h4>
+                        <p>O conceito de "vida ao ar livre" é central para a cultura sueca. Os suecos valorizam profundamente o contato com a natureza em todas as estações.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-hover h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="culture-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h4 class="fw-bold">Fika</h4>
+                        <p>Mais que uma pausa para café, o fika é um ritual social importante onde as pessoas se reúnem para conversar e descontrair, geralmente com café e pães doces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swedish Traditions -->
+    <section class="bg-light py-5 mb-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Tradições Únicas</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card card-hover h-100">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1605000797499-95e51c6b72da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-start h-100" alt="Midsommar">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h4 class="fw-bold">Midsommar</h4>
+                                    <p>O festival do solstício de verão é uma das celebrações mais importantes da Suécia. As pessoas se reúnem para dançar ao redor do mastro decorado com flores, cantar canções tradicionais e desfrutar de banquetes com arenque, batatas novas e morangos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-hover h-100">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-start h-100" alt="Lucia">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h4 class="fw-bold">Lucia</h4>
+                                    <p>Celebrado em 13 de dezembro, o festival de Santa Luzia marca o início da temporada de Natal. Processões com meninas vestidas de branco e coroas de velas iluminam a escuridão do inverno, acompanhadas por canções tradicionais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-4"><i class="fas fa-flag me-2"></i>Suécia</h5>
+                    <p>Um guia completo sobre a terra dos lagos, florestas e inovação.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="cultura.html" class="text-white">Cultura</a></li>
+                        <li class="mb-2"><a href="turismo.html" class="text-white">Turismo</a></li>
+                        <li class="mb-2"><a href="culinaria.html" class="text-white">Culinária</a></li>
+                        <li><a href="informacoes.html" class="text-white">Informações</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@suecia-turismo.com</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +46 123 456 789</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Estocolmo, Suécia</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Newsletter</h5>
+                    <p>Assine para receber atualizações sobre a Suécia.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Seu email" aria-label="Seu email">
+                        <button class="btn btn-sweden" type="button">Assinar</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2023 Suécia - Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="#" class="text-white">Política de Privacidade</a> | 
+                        <a href="#" class="text-white">Termos de Uso</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
