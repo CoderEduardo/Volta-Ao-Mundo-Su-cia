@@ -1,389 +1,538 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Informações sobre a Suécia - Dados e Fatos</title>
     <!-- Bootstrap 5.3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
-        /* Mesmo estilo da página principal */
-        :root {
-            --sweden-blue: #0057B7;
-            --sweden-yellow: #FFCC00;
-            --sweden-light: #E6F0FA;
-            --sweden-dark: #003366;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-        }
-        
-        .navbar {
-            background-color: var(--sweden-blue);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            color: white !important;
-        }
-        
-        .nav-link {
-            color: rgba(255, 255, 255, 0.85) !important;
-            font-weight: 500;
-            margin: 0 5px;
-            transition: all 0.3s;
-        }
-        
-        .nav-link:hover {
-            color: var(--sweden-yellow) !important;
-            transform: translateY(-2px);
-        }
-        
-        .hero-section {
-            background: linear-gradient(rgba(0, 87, 183, 0.7), rgba(0, 87, 183, 0.5)), 
-                        url('https://images.unsplash.com/photo-1526745925052-dd824d27b9ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            margin-bottom: 50px;
-            border-radius: 0 0 20px 20px;
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-            border: none;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn-sweden {
-            background-color: var(--sweden-yellow);
-            color: var(--sweden-dark);
-            font-weight: 600;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 50px;
-            transition: all 0.3s;
-        }
-        
-        .btn-sweden:hover {
-            background-color: var(--sweden-dark);
-            color: white;
-            transform: translateY(-3px);
-        }
-        
-        footer {
-            background-color: var(--sweden-dark);
-            color: white;
-            padding: 30px 0;
-            margin-top: 50px;
-        }
-        
-        .sweden-flag-pattern {
-            height: 10px;
-            background: linear-gradient(90deg, 
-                var(--sweden-blue) 0%, var(--sweden-blue) 30%, 
-                var(--sweden-yellow) 30%, var(--sweden-yellow) 40%, 
-                var(--sweden-blue) 40%, var(--sweden-blue) 100%);
-        }
-        
-        .info-icon {
-            font-size: 2rem;
-            color: var(--sweden-blue);
-            margin-bottom: 15px;
-        }
-        
-        .fact-box {
-            background-color: white;
-            border-left: 4px solid var(--sweden-yellow);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 0 5px 5px 0;
-        }
-        
-        .map-container {
-            height: 400px;
-            background-color: #eee;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+      /* Mesmo estilo da página principal */
+      :root {
+        --sweden-blue: #0057b7;
+        --sweden-yellow: #ffcc00;
+        --sweden-light: #e6f0fa;
+        --sweden-dark: #003366;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      .navbar {
+        background-color: var(--sweden-blue);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        color: white !important;
+      }
+
+      .nav-link {
+        color: rgba(255, 255, 255, 0.85) !important;
+        font-weight: 500;
+        margin: 0 5px;
+        transition: all 0.3s;
+      }
+
+      .nav-link:hover {
+        color: var(--sweden-yellow) !important;
+        transform: translateY(-2px);
+      }
+
+      .hero-section {
+        background: linear-gradient(
+            rgba(0, 87, 183, 0.7),
+            rgba(0, 87, 183, 0.5)
+          ),
+          url("images/suecia4.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 50px;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-sweden {
+        background-color: var(--sweden-yellow);
+        color: var(--sweden-dark);
+        font-weight: 600;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 50px;
+        transition: all 0.3s;
+      }
+
+      .btn-sweden:hover {
+        background-color: var(--sweden-dark);
+        color: white;
+        transform: translateY(-3px);
+      }
+
+      footer {
+        background-color: var(--sweden-dark);
+        color: white;
+        padding: 30px 0;
+        margin-top: 50px;
+      }
+
+      .sweden-flag-pattern {
+        height: 10px;
+        background: linear-gradient(
+          90deg,
+          var(--sweden-blue) 0%,
+          var(--sweden-blue) 30%,
+          var(--sweden-yellow) 30%,
+          var(--sweden-yellow) 40%,
+          var(--sweden-blue) 40%,
+          var(--sweden-blue) 100%
+        );
+      }
+
+      .info-icon {
+        font-size: 2rem;
+        color: var(--sweden-blue);
+        margin-bottom: 15px;
+      }
+
+      .fact-box {
+        background-color: white;
+        border-left: 4px solid var(--sweden-yellow);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .map-container {
+        height: 600px;
+        background-color: #eee;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--sweden-blue);
+      }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Sweden Flag Pattern -->
     <div class="sweden-flag-pattern"></div>
-    
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-flag me-2"></i>Suécia
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cultura.html">Cultura</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="turismo.html">Turismo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="culinaria.html">Culinária</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="informacoes.html">Informações</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-flag me-2"></i>Suécia
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cultura.html">Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="turismo.html">Turismo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="culinaria.html">Culinária</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="informacoes.html">Informações</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold mb-4">Informações sobre a Suécia</h1>
-            <p class="lead mb-5">Dados, fatos e estatísticas sobre o país</p>
-        </div>
+      <div class="container">
+        <h1 class="display-3 fw-bold mb-4">Informações sobre a Suécia</h1>
+        <p class="lead mb-5">Dados, fatos e estatísticas sobre o país</p>
+      </div>
     </section>
 
     <!-- Main Content -->
     <section class="container mb-5">
-        <div class="row mb-5">
-            <div class="col-lg-6">
-                <h2 class="fw-bold mb-4">Dados Gerais</h2>
-                <p class="lead">A Suécia é um país nórdico localizado na península escandinava, conhecido por sua alta qualidade de vida, avançado sistema de bem-estar social e belas paisagens naturais.</p>
-                
-                <div class="fact-box">
-                    <h4 class="fw-bold"><i class="fas fa-landmark me-2"></i>Capital</h4>
-                    <p>Estocolmo (Stockholm) - maior cidade do país com cerca de 1,6 milhões na área metropolitana</p>
-                </div>
-                
-                <div class="fact-box">
-                    <h4 class="fw-bold"><i class="fas fa-language me-2"></i>Língua Oficial</h4>
-                    <p>Sueco (svenska). Inglês é amplamente falado como segunda língua por cerca de 90% da população.</p>
-                </div>
-                
-                <div class="fact-box">
-                    <h4 class="fw-bold"><i class="fas fa-globe-europe me-2"></i>Localização</h4>
-                    <p>Norte da Europa, na península escandinava. Faz fronteira com Noruega a oeste e Finlândia a nordeste, e está conectada à Dinamarca pelo ponte-túnel de Öresund no sul.</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card card-hover border-0 h-100">
-                    <div class="map-container">
-                        <!-- Mapa da Suécia - pode ser substituído por um mapa interativo real -->
-                        <img src="https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid h-100 w-100" alt="Mapa da Suécia" style="object-fit: cover;">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text text-muted">Mapa da Suécia mostrando sua localização na Escandinávia.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4">Dados Gerais</h2>
+          <p class="lead">
+            A Suécia é um país nórdico localizado na península escandinava,
+            conhecido por sua alta qualidade de vida, avançado sistema de
+            bem-estar social e belas paisagens naturais.
+          </p>
 
-        <h2 class="text-center fw-bold mb-5">Mais Informações</h2>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-hover h-100">
-                    <div class="card-body p-4">
-                        <div class="info-icon text-center">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h4 class="fw-bold text-center">Fuso Horário</h4>
-                        <p class="text-center">UTC+1 (Horário da Europa Central) <br> UTC+2 no horário de verão (último domingo de março a último domingo de outubro)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-hover h-100">
-                    <div class="card-body p-4">
-                        <div class="info-icon text-center">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <h4 class="fw-bold text-center">Governo</h4>
-                        <p class="text-center">Monarquia constitucional parlamentarista <br> Rei: Carlos XVI Gustavo <br> Primeira-ministra: Ulf Kristersson (desde 2022)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-hover h-100">
-                    <div class="card-body p-4">
-                        <div class="info-icon text-center">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div>
-                        <h4 class="fw-bold text-center">Clima</h4>
-                        <p class="text-center">Temperado no sul com invernos frios e verões amenos; subártico no norte. Temperaturas variam de -30°C no inverno no norte a 30°C no verão no sul.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-hover h-100">
-                    <div class="card-body p-4">
-                        <div class="info-icon text-center">
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                        <h4 class="fw-bold text-center">Moeda</h4>
-                        <p class="text-center">Coroa sueca (SEK) <br> 1 SEK ≈ 0,50 BRL (varia) <br> Notas: 20, 50, 100, 200, 500, 1000 SEK <br> Moedas: 1, 2, 5, 10 SEK</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-hover h-100">
-                    <div class="card-body p-4">
-                        <div class="info-icon text-center">
-                            <i class="fas fa-ruler-combined"></i>
-                        </div>
-                        <h4 class="fw-bold text-center">Área</h4>
-                        <p class="text-center">450.295 km² (3º maior país da UE) <br> 8,7% do território é água (cerca de 100.000 lagos) <br> 69% coberto por florestas <br> 3.218 km de costa</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card card-hover h-100">
-                    <div class="card-body p-4">
-                        <div class="info-icon text-center">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4 class="fw-bold text-center">População</h4>
-                        <p class="text-center">10,5 milhões (2023) <br> Densidade: 25 hab/km² <br> Expectativa de vida: 82,8 anos <br> Taxa de alfabetização: 99%</p>
-                    </div>
-                </div>
-            </div>
+          <div class="fact-box">
+            <h4 class="fw-bold"><i class="fas fa-landmark me-2"></i>Capital</h4>
+            <p>
+              Estocolmo (Stockholm) - maior cidade do país com cerca de 1,6
+              milhões na área metropolitana
+            </p>
+          </div>
+
+          <div class="fact-box">
+            <h4 class="fw-bold">
+              <i class="fas fa-language me-2"></i>Língua Oficial
+            </h4>
+            <p>
+              Sueco (svenska). Inglês é amplamente falado como segunda língua
+              por cerca de 90% da população.
+            </p>
+          </div>
+
+          <div class="fact-box">
+            <h4 class="fw-bold">
+              <i class="fas fa-globe-europe me-2"></i>Localização
+            </h4>
+            <p>
+              Norte da Europa, na península escandinava. Faz fronteira com
+              Noruega a oeste e Finlândia a nordeste, e está conectada à
+              Dinamarca pelo ponte-túnel de Öresund no sul.
+            </p>
+          </div>
         </div>
+        <div class="col-lg-6">
+          <div class="card card-hover border-0 h-100">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325433.5698144715!2d17.75237839510891!3d59.32624184494011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sEstocolmo%2C%20Su%C3%A9cia!5e0!3m2!1spt-BR!2sbr!4v1689879477394!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-muted">
+                Mapa da Suécia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-center fw-bold mb-5">Mais Informações</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-hover h-100">
+            <div class="card-body p-4">
+              <div class="info-icon text-center">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4 class="fw-bold text-center">Fuso Horário</h4>
+              <p class="text-center">
+                UTC+1 (Horário da Europa Central) <br />
+                UTC+2 no horário de verão (último domingo de março a último
+                domingo de outubro)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-hover h-100">
+            <div class="card-body p-4">
+              <div class="info-icon text-center">
+                <i class="fas fa-university"></i>
+              </div>
+              <h4 class="fw-bold text-center">Governo</h4>
+              <p class="text-center">
+                Monarquia constitucional parlamentarista <br />
+                Rei: Carlos XVI Gustavo <br />
+                Primeira-ministra: Ulf Kristersson (desde 2022)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-hover h-100">
+            <div class="card-body p-4">
+              <div class="info-icon text-center">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <h4 class="fw-bold text-center">Clima</h4>
+              <p class="text-center">
+                Temperado no sul com invernos frios e verões amenos; subártico
+                no norte. Temperaturas variam de -30°C no inverno no norte a
+                30°C no verão no sul.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-hover h-100">
+            <div class="card-body p-4">
+              <div class="info-icon text-center">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <h4 class="fw-bold text-center">Moeda</h4>
+              <p class="text-center">
+                Coroa sueca (SEK) <br />
+                1 SEK ≈ 0,50 BRL (varia) <br />
+                Notas: 20, 50, 100, 200, 500, 1000 SEK <br />
+                Moedas: 1, 2, 5, 10 SEK
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-hover h-100">
+            <div class="card-body p-4">
+              <div class="info-icon text-center">
+                <i class="fas fa-ruler-combined"></i>
+              </div>
+              <h4 class="fw-bold text-center">Área</h4>
+              <p class="text-center">
+                450.295 km² (3º maior país da UE) <br />
+                8,7% do território é água (cerca de 100.000 lagos) <br />
+                69% coberto por florestas <br />
+                3.218 km de costa
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-hover h-100">
+            <div class="card-body p-4">
+              <div class="info-icon text-center">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4 class="fw-bold text-center">População</h4>
+              <p class="text-center">
+                10,5 milhões (2023) <br />
+                Densidade: 25 hab/km² <br />
+                Expectativa de vida: 82,8 anos <br />
+                Taxa de alfabetização: 99%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Fun Facts -->
     <section class="bg-light py-5 mb-5">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-5">Curiosidades sobre a Suécia</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card card-hover h-100">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold"><i class="fas fa-award me-2"></i>Prêmios Nobel</h4>
-                            <p>A cerimônia do Prêmio Nobel acontece anualmente em Estocolmo (exceto o da Paz, que é em Oslo). Alfred Nobel, criador do prêmio, era sueco.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-hover h-100">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold"><i class="fas fa-recycle me-2"></i>Sustentabilidade</h4>
-                            <p>A Suécia recicla 99% de seu lixo doméstico e importa lixo de outros países para gerar energia em usinas de reciclagem.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-hover h-100">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold"><i class="fas fa-sun me-2"></i>Sol da Meia-Noite</h4>
-                            <p>No verão, no extremo norte do país, o sol não se põe por várias semanas. No inverno, ocorre o fenômeno oposto - a noite polar.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-hover h-100">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold"><i class="fas fa-home me-2"></i>Direito de Acesso</h4>
-                            <p>O "Allemansrätten" (Direito de Todos) permite que qualquer pessoa acampe, ande ou colha frutas silvestres em terras privadas, desde que respeite a natureza.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-hover h-100">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold"><i class="fas fa-music me-2"></i>Exportações Musicais</h4>
-                            <p>A Suécia é o terceiro maior exportador de música do mundo, depois dos EUA e Reino Unido. ABBA, Roxette, Avicii e Swedish House Mafia são alguns exemplos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-hover h-100">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold"><i class="fas fa-bicycle me-2"></i>Cultura das Bicicletas</h4>
-                            <p>9 em 10 suecos possuem uma bicicleta. Em cidades como Malmö, cerca de 40% de todos os deslocamentos são feitos de bike.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Curiosidades sobre a Suécia</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card card-hover h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold">
+                  <i class="fas fa-award me-2"></i>Prêmios Nobel
+                </h4>
+                <p>
+                  A cerimônia do Prêmio Nobel acontece anualmente em Estocolmo
+                  (exceto o da Paz, que é em Oslo). Alfred Nobel, criador do
+                  prêmio, era sueco.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-hover h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold">
+                  <i class="fas fa-recycle me-2"></i>Sustentabilidade
+                </h4>
+                <p>
+                  A Suécia recicla 99% de seu lixo doméstico e importa lixo de
+                  outros países para gerar energia em usinas de reciclagem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-hover h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold">
+                  <i class="fas fa-sun me-2"></i>Sol da Meia-Noite
+                </h4>
+                <p>
+                  No verão, no extremo norte do país, o sol não se põe por
+                  várias semanas. No inverno, ocorre o fenômeno oposto - a noite
+                  polar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-hover h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold">
+                  <i class="fas fa-home me-2"></i>Direito de Acesso
+                </h4>
+                <p>
+                  O "Allemansrätten" (Direito de Todos) permite que qualquer
+                  pessoa acampe, ande ou colha frutas silvestres em terras
+                  privadas, desde que respeite a natureza.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-hover h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold">
+                  <i class="fas fa-music me-2"></i>Exportações Musicais
+                </h4>
+                <p>
+                  A Suécia é o terceiro maior exportador de música do mundo,
+                  depois dos EUA e Reino Unido. ABBA, Roxette, Avicii e Swedish
+                  House Mafia são alguns exemplos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-hover h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold">
+                  <i class="fas fa-bicycle me-2"></i>Cultura das Bicicletas
+                </h4>
+                <p>
+                  9 em 10 suecos possuem uma bicicleta. Em cidades como Malmö,
+                  cerca de 40% de todos os deslocamentos são feitos de bike.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="fw-bold mb-4"><i class="fas fa-flag me-2"></i>Suécia</h5>
-                    <p>Um guia completo sobre a terra dos lagos, florestas e inovação.</p>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h5 class="fw-bold mb-4">Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
-                        <li class="mb-2"><a href="cultura.html" class="text-white">Cultura</a></li>
-                        <li class="mb-2"><a href="turismo.html" class="text-white">Turismo</a></li>
-                        <li class="mb-2"><a href="culinaria.html" class="text-white">Culinária</a></li>
-                        <li><a href="informacoes.html" class="text-white">Informações</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="fw-bold mb-4">Contato</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@suecia-turismo.com</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +46 123 456 789</li>
-                        <li><i class="fas fa-map-marker-alt me-2"></i> Estocolmo, Suécia</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-4">Volta ao mundo</h5>
-                    <p>Digite seu email para receber mais informações.</p>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Seu email" aria-label="Seu email">
-                        <button class="btn btn-sweden" type="button">Cadatrar email</button>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="fw-bold mb-4"><i class="fas fa-flag me-2"></i>Suécia</h5>
+            <p>
+              Um guia completo sobre a terra dos lagos, florestas e inovação.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-pinterest"></i
+              ></a>
             </div>
-            <hr class="my-4 bg-light">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="small mb-0">&copy; 2023 Suécia - Todos os direitos reservados.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="small mb-0">
-                        <a href="#" class="text-white">Política de Privacidade</a> | 
-                        <a href="#" class="text-white">Termos de Uso</a>
-                    </p>
-                </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-white">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="cultura.html" class="text-white">Cultura</a>
+              </li>
+              <li class="mb-2">
+                <a href="turismo.html" class="text-white">Turismo</a>
+              </li>
+              <li class="mb-2">
+                <a href="culinaria.html" class="text-white">Culinária</a>
+              </li>
+              <li>
+                <a href="informacoes.html" class="text-white">Informações</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-4">Contato</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i> info@suecia-turismo.com
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> +46 123 456 789
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> Estocolmo, Suécia
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-4">Volta ao mundo</h5>
+            <p>Digite seu email para receber mais informações.</p>
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Seu email"
+                aria-label="Seu email"
+              />
+              <button class="btn btn-sweden" type="button">
+                Cadatrar email
+              </button>
             </div>
+          </div>
         </div>
+        <hr class="my-4 bg-light" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="small mb-0">
+              &copy; 2023 Suécia - Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="small mb-0">
+              <a href="#" class="text-white">Política de Privacidade</a> |
+              <a href="#" class="text-white">Termos de Uso</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Bootstrap 5.3 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
